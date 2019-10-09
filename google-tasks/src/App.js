@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import TasksContainer from './TasksContainer';
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <header className="App-header">
         <div className="App-main">
           <h2>My Tasks</h2>
+          <TasksContainer />
         </div>
       </header>
     </div>

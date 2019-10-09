@@ -7,7 +7,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #B9BBBA;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,6 +24,7 @@
 .App-main {
   font-family: 'Montserrat', sans-serif;
   width: 375px;
+  min-height: 600px;
   background-color: #fff;
   text-align: left;
   padding: 10px
@@ -31,4 +32,5 @@
 
 h2 {
   font-weight: normal;
+  padding-left: 50px;
 }
