@@ -11,14 +11,18 @@ const TasksIncomplete = (props) => {
     return getTasks().map(task => {
       return (
         <div key={task.name}>
-          <FiberManualRecordOutlined />{task.name}
+          <FiberManualRecordOutlined onClick={() => props.onClick(task.name)} />
+          {task.name}
         </div>
       )
     })
   }
 
     return (
-      <div>{displayTasks()}</div>
+      <>
+        <h4>Incomplete</h4>
+        <div>{displayTasks()}</div>
+      </>
     )
 }
 
