@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TasksComplete from './TasksComplete';
 import TasksIncomplete from './TasksIncomplete';
+import Intro from './Intro';
 
 class TasksContainer extends Component {
 
@@ -8,8 +9,7 @@ class TasksContainer extends Component {
     super();
     this.state = {
       tasks: [
-        {name: "Go shopping", complete: false},
-        {name: "Workout", complete: false}
+        // {name: "Go!", complete: false}
       ]
     }
   }
@@ -35,8 +35,12 @@ class TasksContainer extends Component {
   render() {
     return (
       <>
+        {this.state.tasks.length === 0 ? <Intro /> :
+        <>
         <TasksIncomplete tasks={this.state.tasks} onClick={this.onClick}/>
         <TasksComplete tasks={this.state.tasks} onClick={this.onClick}/>
+        </>
+      }
       </>
     )
   }

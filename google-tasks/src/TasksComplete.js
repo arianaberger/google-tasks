@@ -22,7 +22,7 @@ const TasksComplete = (props) => {
     return (
       <>
         <h4>Complete</h4>
-        <div>{displayTasks()}</div>
+        <div className="Completed-tasks">{displayTasks()}</div>
       </>
     )
 }

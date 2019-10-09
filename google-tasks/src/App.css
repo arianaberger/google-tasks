@@ -1,4 +1,5 @@
 .App {
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
@@ -22,9 +23,8 @@
 }
 
 .App-main {
-  font-family: 'Montserrat', sans-serif;
-  width: 375px;
-  min-height: 600px;
+  width: 340px;
+  min-height: 550px;
   background-color: #fff;
   text-align: left;
   padding: 10px
@@ -32,5 +32,38 @@
 
 h2 {
   font-weight: normal;
+  font-size: 1.2em;
   padding-left: 50px;
+}
+
+h5 {
+  margin-top: 10px;
+  font-size: .6em;
+  text-align: center;
+}
+
+h6 {
+  margin-top: -15px;
+  font-size: .55em;
+  font-weight: normal;
+  color: #393939;
+  text-align: center;
+}
+
+.Completed-tasks {
+  text-decoration: line-through;
+}
+
+.Image-container {
+  justify-content: center;
+  display: flex;
+}
+
+.Image-splash {
+  margin-top: 50px;
+  width: 70%;
+}
+
+.Text-container {
+  display: block;
 }
