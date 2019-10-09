@@ -1,4 +1,5 @@
 import React from 'react';
+import {FiberManualRecordOutlined} from '@material-ui/icons';
 
 const TasksIncomplete = (props) => {
 
@@ -10,7 +11,7 @@ const TasksIncomplete = (props) => {
     return getTasks().map(task => {
       return (
         <div key={task.name}>
-        {task.name}
+          <FiberManualRecordOutlined />{task.name}
         </div>
       )
     })
