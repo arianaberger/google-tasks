@@ -107,15 +107,27 @@ h6 {
 
 /* Add Task */
 
+.Add-task {
+  width: 300px;
+  height: 10%;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  z-index: 5000;
+  display: block;
+}
+
 .Add-task-overlay {
   width: 300px;
-  height: 550px;
+  height: 90%;
   padding: 10px;
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.1;
+  opacity: 0.2;
   background-color: black;
-  z-index: 5000;
+  /* z-index: 5000; */
   display: block;
 }
