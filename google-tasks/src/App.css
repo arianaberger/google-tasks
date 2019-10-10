@@ -27,8 +27,13 @@
   min-height: 550px;
   background-color: #fff;
   text-align: left;
-  padding: 10px
+  padding: 10px;
+  box-shadow: 5px 5px 8px #d1d1d1;
+  -webkit-box-shadow: 5px 7px 8px -3px rgba(0,0,0,0.34);
+  -moz-box-shadow: 5px 7px 8px -3px rgba(0,0,0,0.34);
 }
+
+/* General Formatting */
 
 h2 {
   font-weight: normal;
@@ -49,6 +54,33 @@ h6 {
   color: #393939;
   text-align: center;
 }
+
+/* Menu Footer Stylings */
+
+.Menu-footer {
+  display: flex;
+  justify-content: center;
+  width: 340px;
+}
+
+.Col-1 {
+  width: 33%;
+  padding: 5px;
+}
+
+.Col-2 {
+  width: 33%;
+  padding: 5px;
+  text-align: center;
+}
+
+.Col-3 {
+  width: 33%;
+  padding: 5px;
+  text-align: right;
+}
+
+/* Task-specific Formatting */
 
 .Completed-tasks {
   text-decoration: line-through;

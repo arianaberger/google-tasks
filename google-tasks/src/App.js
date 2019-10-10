@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import TasksContainer from './TasksContainer';
+import MenuFooter from './MenuFooter'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <div className="App-main">
           <h2>My Tasks</h2>
           <TasksContainer />
+          <MenuFooter />
         </div>
       </header>
     </div>
