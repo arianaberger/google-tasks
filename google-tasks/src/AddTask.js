@@ -1,13 +1,13 @@
 import React from 'react';
 import {Notes, Event} from '@material-ui/icons';
 
-const AddTask = () => {
+const AddTask = (props) => {
   return (
     <div className="Add-task">
-      <input value="New task"></input>
+      <input value="New task" name="task"></input>
       <Notes />
       <Event />
-      Save
+      <button>Save</button>
     </div>
   )
 }

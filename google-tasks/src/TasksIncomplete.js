@@ -10,9 +10,9 @@ const TasksIncomplete = (props) => {
   const displayTasks = () => {
     return getTasks().map(task => {
       return (
-        <div key={task.name}>
-          <FiberManualRecordOutlined onClick={() => props.onClick(task.name)} />
-          {task.name}
+        <div key={task.task}>
+          <FiberManualRecordOutlined onClick={() => props.onClick(task.task)} />
+          {task.task}
         </div>
       )
     })

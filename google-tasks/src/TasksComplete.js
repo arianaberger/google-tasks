@@ -10,9 +10,9 @@ const TasksComplete = (props) => {
   const displayTasks = () => {
     return getTasks().map(task => {
       return (
-        <div key={task.name}>
-          <DoneOutlined onClick={() => props.onClick(task.name)} />
-          {task.name}
+        <div key={task.task}>
+          <DoneOutlined onClick={() => props.onClick(task.task)} />
+          {task.task}
         </div>
       )
     })

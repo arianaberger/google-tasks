@@ -9,14 +9,36 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      clicked: false
+      clicked: false,
+      tasks: [
+        {task: "Go!", complete: false}
+      ]
     }
   }
 
-  onClick = e => {
+  onClickAddTask = e => {
     console.log("clicked")
     this.setState({
       clicked: !this.state.clicked
+    })
+  }
+
+
+  onClickCompleteTasks = e => {
+    const newTasks = [...this.state.tasks]
+    const newArr = newTasks.map(task => {
+      if (task.task === e) {
+        return {
+          ...task,
+          complete: !task.complete
+        }
+      } else {
+        return task
+      }
+    })
+
+    this.setState({
+      tasks: newArr
     })
   }
 
@@ -25,15 +47,20 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <div className="App-main">
-            {this.state.clicked ? <><div className="Add-task-overlay"></div><AddTask /></> : null}
-
+            {this.state.clicked ?
+              <>
+                <div className="Add-task-overlay" onClick={this.onClickAddTask}></div>
+                <AddTask tasks={this.state.tasks}/>
+              </> :
+              null
+            }
 
             <h2>My Tasks</h2>
             <div className="Tasks">
-              <TasksContainer />
+              <TasksContainer onClick={this.onClickCompleteTasks} tasks={this.state.tasks}/>
             </div>
             <div className="Menu-footer">
-              <MenuFooter onClick={this.onClick} />
+              <MenuFooter onClick={this.onClickAddTask} />
             </div>
           </div>
         </header>
