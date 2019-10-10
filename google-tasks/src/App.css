@@ -23,7 +23,8 @@
 }
 
 .App-main {
-  width: 340px;
+  position: relative;
+  width: 300px;
   min-height: 550px;
   background-color: #fff;
   text-align: left;
@@ -38,7 +39,7 @@
 h2 {
   font-weight: normal;
   font-size: 1.2em;
-  padding-left: 50px;
+  padding-left: 40px;
 }
 
 h5 {
@@ -60,7 +61,7 @@ h6 {
 .Menu-footer {
   display: flex;
   justify-content: center;
-  width: 340px;
+  width: 300px;
 }
 
 .Col-1 {
@@ -82,6 +83,10 @@ h6 {
 
 /* Task-specific Formatting */
 
+.Tasks {
+  min-height: 430px;
+}
+
 .Completed-tasks {
   text-decoration: line-through;
 }
@@ -97,5 +102,20 @@ h6 {
 }
 
 .Text-container {
+  display: block;
+}
+
+/* Add Task */
+
+.Add-task-overlay {
+  width: 300px;
+  height: 550px;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+  background-color: black;
+  z-index: 5000;
   display: block;
 }

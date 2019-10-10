@@ -8,9 +8,14 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className="App-main">
+        <div className="Add-task-overlay">Hello</div>
           <h2>My Tasks</h2>
-          <TasksContainer />
-          <MenuFooter />
+          <div className="Tasks">
+            <TasksContainer />
+          </div>
+          <div className="Menu-footer">
+            <MenuFooter />
+          </div>
         </div>
       </header>
     </div>
