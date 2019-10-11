@@ -28,10 +28,7 @@ const TasksIncomplete = (props) => {
   }
 
     return (
-      <>
-        <h4>Incomplete</h4>
         <div>{displayTasks()}</div>
-      </>
     )
 }
 

@@ -14,9 +14,9 @@ class App extends Component {
       tasks: [
         {task: "You!", complete: false, id: 1},
         {task: "Can!", complete: false, id: 2},
-        {task: "Do!", complete: false, id: 3},
-        {task: "It!", complete: false, id: 4},
-        {task: "This one should overflow and if it doesn't I will be really annoyed", complete: false, id: 5},
+        {task: "Do!", complete: true, id: 3},
+        {task: "It!", complete: true, id: 4},
+        // {task: "This one should overflow and if it doesn't I will be really annoyed", complete: false, id: 5},
       ]
     }
   }

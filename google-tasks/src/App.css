@@ -40,6 +40,15 @@ h2 {
   font-weight: normal;
   font-size: 1.2em;
   padding-left: 48px;
+  padding-bottom: 15px;
+}
+
+h4 {
+  font-size: 0.65em;
+  font-weight: 600;
+  padding-left: 15px;
+  margin-top: 15px;
+  color: #3F3F3F;
 }
 
 h5 {
@@ -124,14 +133,16 @@ button {
 
 .Task-divider {
   width: 100%;
-  padding-top: 12px;
+  padding-top: 15px;
   margin-bottom: 15px;
   border-bottom: .75px solid #E8E8E8;
 }
 
-.Circle {
-  padding-left: 10px;
-  padding-right: 10px;
+.Task-completed-divider {
+  width: 100%;
+  padding-top: 5px;
+  margin-bottom: 5px;
+  border-bottom: .75px solid #E8E8E8;
 }
 
 .Circle-svg {
@@ -140,6 +151,14 @@ button {
   width: 18px;
   height: 18px;
   fill: #555555;
+}
+
+.Check-svg {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 22px;
+  height: 22px;
+  fill: #2679EB;
 }
 
 /* Add Task */
