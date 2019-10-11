@@ -4,8 +4,8 @@ const AddTaskForm = (props) => {
   return (
     <div>
       <form onSubmit={props.handleSubmit}>
-      <div className="Add-task-input">
-      <input value={props.task} name="task" onChange={props.handleOnChange}></input>
+      <div>
+      <input value={props.task} name="task" onChange={props.handleOnChange} className="Add-task-input"></input>
       </div>
 
       <div className="Add-task-form">
