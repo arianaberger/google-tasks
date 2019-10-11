@@ -9,9 +9,10 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
+      counter: 1,
       clicked: false,
       tasks: [
-        // {task: "Go!", complete: false}
+        // {task: "Go!", complete: false, id: 1}
       ]
     }
   }
@@ -26,7 +27,7 @@ class App extends Component {
   onClickCompleteTasks = e => {
     const newTasks = [...this.state.tasks]
     const newArr = newTasks.map(task => {
-      if (task.task === e) {
+      if (task.id === e) {
         return {
           ...task,
           complete: !task.complete
@@ -43,8 +44,9 @@ class App extends Component {
 
   createTask = task => {
     this.setState({
-      tasks: [...this.state.tasks, {task: task, complete: false}],
-      clicked: !this.state.clicked
+      tasks: [...this.state.tasks, {task: task, complete: false, id: this.state.counter}],
+      clicked: !this.state.clicked,
+      counter: this.state.counter + 1
     })
   }
 

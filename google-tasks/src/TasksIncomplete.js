@@ -11,7 +11,7 @@ const TasksIncomplete = (props) => {
     return getTasks().map(task => {
       return (
         <div key={task.task}>
-          <FiberManualRecordOutlined onClick={() => props.onClick(task.task)} />
+          <FiberManualRecordOutlined onClick={() => props.onClick(task.id)} />
           {task.task}
         </div>
       )
