@@ -24,11 +24,11 @@
 
 .App-main {
   position: relative;
-  width: 300px;
-  min-height: 550px;
+  width: 320px;
+  min-height: 570px;
   background-color: #fff;
   text-align: left;
-  padding: 10px;
+  /* padding: 10px; */
   box-shadow: 5px 5px 8px #d1d1d1;
   -webkit-box-shadow: 5px 7px 8px -3px rgba(0,0,0,0.34);
   -moz-box-shadow: 5px 7px 8px -3px rgba(0,0,0,0.34);
@@ -39,7 +39,7 @@
 h2 {
   font-weight: normal;
   font-size: 1.2em;
-  padding-left: 40px;
+  padding-left: 48px;
 }
 
 h5 {
@@ -110,6 +110,36 @@ button {
 
 .Text-container {
   display: block;
+}
+
+.Task-row {
+  font-size: .6em;
+  display: flex;
+}
+
+.Task-cols {
+  height: 20px;
+  line-height: 20px;
+}
+
+.Task-divider {
+  width: 100%;
+  padding-top: 12px;
+  margin-bottom: 15px;
+  border-bottom: .75px solid #E8E8E8;
+}
+
+.Circle {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.Circle-svg {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 18px;
+  height: 18px;
+  fill: #555555;
 }
 
 /* Add Task */

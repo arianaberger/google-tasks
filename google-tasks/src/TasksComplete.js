@@ -10,9 +10,10 @@ const TasksComplete = (props) => {
   const displayTasks = () => {
     return getTasks().map(task => {
       return (
-        <div key={task.task}>
+        <div key={task.task} className="Task-row">
           <DoneOutlined onClick={() => props.onClick(task.id)} />
           {task.task}
+          <div className="Task-divider"></div>
         </div>
       )
     })
