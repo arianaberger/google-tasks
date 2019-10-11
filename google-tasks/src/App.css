@@ -160,6 +160,70 @@ button {
   width: 50%;
 }
 
+/* Add Task Function */
+
+.Add-task {
+  width: 300px;
+  height: 15%;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  /* z-index: 5000; */
+  display: block;
+}
+
+.Add-task-overlay {
+  width: 300px;
+  height: 85%;
+  padding: 10px;
+  transition-duration: 1s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  background-color: black;
+  /* z-index: 5000; */
+  display: block;
+}
+
+/* .Add-task-overlay:click {
+
+} */
+
+.Add-task-form {
+  display: flex;
+  width: 300px;
+}
+
+.Add-task-input {
+  height: 40px;
+}
+
+.Add-task-cols1 {
+  padding-top: 15px;
+  width: 15%
+}
+
+.Add-task-cols2 {
+  padding-top: 15px;
+  width: 15%
+}
+
+.Add-task-cols3 {
+  text-align: right;
+  padding-top: 10px;
+  padding-right: 5px;
+  width: 70%;
+}
+
+.Submit-button {
+  font-size: 0.6em;
+  font-weight: bold;
+  color: #2679EB;
+}
+
 
 /* SVG Formatting */
 
@@ -187,34 +251,16 @@ button {
   padding-left: 70%;
 }
 
-/* Add Task */
-
-.Add-task {
-  width: 300px;
-  height: 10%;
-  padding: 10px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: white;
-  z-index: 5000;
-  display: block;
+.Notes-svg {
+  padding-left: 5px;
+  width: 20px;
+  height: 20px;
+  fill: #2679EB;
 }
 
-.Add-task-overlay {
-  width: 300px;
-  height: 90%;
-  padding: 10px;
-  transition-duration: 1s;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.2;
-  background-color: black;
-  /* z-index: 5000; */
-  display: block;
-}
-
-.Add-task-overlay:click {
-
+.Event-svg {
+  padding-left: 5px;
+  width: 20px;
+  height: 20px;
+  fill: #2679EB;
 }
