@@ -12,7 +12,7 @@ const MenuFooter = (props) => {
         </svg>
       </div>
       <div className="Col-2">
-        <img src={Plus} onClick={props.onClick} />
+        <img src={Plus} onClick={props.onClick} alt="google-plus-icon" />
       </div>
       <div className="Col-3">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="More-svg">

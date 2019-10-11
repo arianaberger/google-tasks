@@ -1,11 +1,11 @@
 import React from 'react';
-import splash from './images/intro-splash.png';
+import Splash from './images/intro-splash.png';
 
 const Intro = () => {
   return (
     <>
     <div className="Image-container">
-      <img src={splash} alt="splash" className="Image-splash"/>
+      <img src={Splash} alt="splash" className="Image-splash"/>
     </div>
     <div className="Text-container">
       <h5>A fresh start</h5>

@@ -1,5 +1,8 @@
-.App {
+body {
   font-family: 'Montserrat', sans-serif;
+}
+
+.App {
   text-align: center;
 }
 
@@ -58,10 +61,12 @@ h5 {
 }
 
 h6 {
+  margin-left: 60px;
+  margin-right: 60px;
   margin-top: -15px;
   font-size: .55em;
   font-weight: normal;
-  color: #393939;
+  color: #666666;
   text-align: center;
 }
 
@@ -166,11 +171,18 @@ button {
   width: 50%;
 }
 
+#Image-complete-tasks {
+  padding-top: 20px;
+  margin-bottom: -20px;
+  width: 70%;
+  height: 70%;
+}
+
 /* Add Task Function */
 
 .Add-task {
   width: 300px;
-  height: 15%;
+  height: 12%;
   padding: 10px;
   position: absolute;
   bottom: 0;
@@ -182,7 +194,7 @@ button {
 
 .Add-task-overlay {
   width: 300px;
-  height: 85%;
+  height: 88%;
   padding: 10px;
   transition-duration: 1s;
   position: absolute;

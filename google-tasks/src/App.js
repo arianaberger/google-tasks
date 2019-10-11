@@ -12,10 +12,10 @@ class App extends Component {
       counter: 1,
       clicked: false,
       tasks: [
-        {task: "You!", complete: false, id: 1},
-        {task: "Can!", complete: false, id: 2},
-        {task: "Do!", complete: true, id: 3},
-        {task: "It!", complete: true, id: 4},
+        // {task: "You!", complete: false, id: 1},
+        // {task: "Can!", complete: false, id: 2},
+        // {task: "Do!", complete: true, id: 3},
+        // {task: "It!", complete: true, id: 4},
         // {task: "This one should overflow and if it doesn't I will be really annoyed", complete: false, id: 5},
       ]
     }
