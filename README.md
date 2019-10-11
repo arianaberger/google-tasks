@@ -16,7 +16,7 @@ Google Tasks
 
 ## App Demo
 
-You can watch an overview of this app that I recorded on [youtube](https://youtu.be/-vp_ztoGX0A).
+You can watch an overview of this app that I recorded on [youtube](https://youtu.be/nh9gS2qs2h0).
 
 ## Quick-Start Instructions
 
