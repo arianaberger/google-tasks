@@ -68,6 +68,7 @@ const TasksComplete = (props) => {
               </svg>
            </div>
         </div>
+        <div className="Task-completed-bottom-border"></div>
       </>
     )
   }
