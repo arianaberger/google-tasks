@@ -137,8 +137,14 @@ button {
 }
 
 .Task-cols {
+  /* line-height: 18px;
+  height: 20px; */
+  vertical-align: middle;
+}
+
+.Task-cols-check {
+  line-height: 22px;
   height: 20px;
-  line-height: 20px;
 }
 
 .Task-divider {
@@ -282,7 +288,6 @@ button {
 
 .Email-name {
   padding-left: 10px;
-  padding-bottom: 3px;
   padding-top: 5px;
   display: table;
   font-size: 0.5em;
@@ -293,7 +298,8 @@ button {
   padding-left: 10px;
   display: block;
   font-size: 0.45em;
-  padding-top: 5px;
+  padding-top: 2px;
+  vertical-align: middle;
 }
 
 .Menu-row {
@@ -303,6 +309,17 @@ button {
   font-weight: bold;
   display: flex;
   padding-left: 10px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+#Menu-row2 {
+  min-height: 10px;
+  color: #3F3F3F;
+  font-size: .55em;
+  font-weight: bold;
+  display: flex;
+  padding-left: 5px;
   padding-bottom: 15px;
   padding-top: 15px;
 }
@@ -343,12 +360,17 @@ button {
   padding-top: 5px;
 }
 
-#adjust {
-  padding-top: -10px;
+.Vertical-align {
+  vertical-align: middle;
+}
+
+.Vertical-align2 {
+  line-height: 20px;
+  height: 20px;
 }
 
 
-/* SVG Formatting */
+/* SVG and image Formatting */
 
 .Circle-svg {
   padding-left: 15px;
@@ -378,7 +400,7 @@ button {
   width: 15px;
   height: 15px;
   fill: #555555;
-  padding-left: 5px;
+  padding-left: 3px;
 }
 
 .Notes-svg {
@@ -393,6 +415,13 @@ button {
   width: 20px;
   height: 20px;
   fill: #2679EB;
+}
+
+#Add-svg {
+  width: 18px;
+  height: 18px;
+  fill: #555555;
+  padding-right: 10px;
 }
 
 #Menu-svg {

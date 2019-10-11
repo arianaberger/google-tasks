@@ -12,13 +12,13 @@ const TasksComplete = (props) => {
       return (
         <div key={task.id}>
           <div className="Task-row">
-            <div className="Task-cols">
+            <div className="Task-cols-check">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="Check-svg" onClick={() => props.onClick(task.id)}>
                 <path d="M0 0h24v24H0z" fill="none"/>
                 <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
               </svg>
             </div>
-            <div className="Task-cols">
+            <div className="Task-cols-check">
               {task.task}
             </div>
           </div>
