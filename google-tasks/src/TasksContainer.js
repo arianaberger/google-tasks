@@ -1,20 +1,35 @@
-import React from 'react';
+import React, { Component } from 'react';
 import TasksComplete from './TasksComplete';
 import TasksIncomplete from './TasksIncomplete';
 import Intro from './Intro';
 
-const TasksContainer = (props) => {
+class TasksContainer extends Component {
 
-  return (
-    <>
-      {props.tasks.length === 0 ? <Intro /> :
-      <>
-      <TasksIncomplete tasks={props.tasks} onClick={props.onClick}/>
-      <TasksComplete tasks={props.tasks} onClick={props.onClick}/>
-      </>
+  constructor(props) {
+    super(props);
+    this.state = {
+      collapse: false
     }
-    </>
-  )
+  }
+
+  divCollapse = () => {
+    this.setState({
+      collapse: !this.state.collapse
+    })
+  }
+
+  render() {
+    return (
+      <>
+        {this.props.tasks.length === 0 ? <Intro /> :
+        <>
+        <TasksIncomplete tasks={this.props.tasks} onClick={this.props.onClick}/>
+        <TasksComplete tasks={this.props.tasks} onClick={this.props.onClick} divCollapse={this.divCollapse} collapse={this.state.collapse}/>
+        </>
+      }
+      </>
+    )
+  }
 }
 
 export default TasksContainer

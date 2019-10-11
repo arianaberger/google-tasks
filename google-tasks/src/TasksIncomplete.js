@@ -9,8 +9,8 @@ const TasksIncomplete = (props) => {
   const displayTasks = () => {
     return getTasks().map(task => {
       return (
-        <>
-          <div key={task.task} className="Task-row">
+        <div key={task.id}>
+          <div className="Task-row">
             <div className="Task-cols">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="Circle-svg" onClick={() => props.onClick(task.id)}>
                 <path d="M0 0h24v24H0z" fill="none"/>
@@ -22,7 +22,7 @@ const TasksIncomplete = (props) => {
             </div>
           </div>
           <div className="Task-divider"></div>
-        </>
+        </div>
       )
     })
   }

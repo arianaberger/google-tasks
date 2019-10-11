@@ -145,6 +145,18 @@ button {
   border-bottom: .75px solid #E8E8E8;
 }
 
+.Task-completed-row {
+  width: 100%;
+  display: flex;
+}
+
+.Task-completed-cols {
+  width: 50%;
+}
+
+
+/* SVG Formatting */
+
 .Circle-svg {
   padding-left: 15px;
   padding-right: 15px;
@@ -159,6 +171,14 @@ button {
   width: 22px;
   height: 22px;
   fill: #2679EB;
+}
+
+.Arrow {
+  width: 22px;
+  height: 22px;
+  fill: #555555;
+  padding-top: 13px;
+  padding-left: 70%;
 }
 
 /* Add Task */
