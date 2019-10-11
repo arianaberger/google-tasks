@@ -80,7 +80,7 @@ const TasksComplete = (props) => {
       {props.collapse && getTasks().length === props.tasks.length ?
         <>
         <div className="Image-container">
-          <img src={Complete} id="Image-complete-tasks"/>
+          <img src={Complete} id="Image-complete-tasks" alt="tasks completed"/>
         </div>
         <div className="Text-container">
           <h5>Nicely done!</h5>

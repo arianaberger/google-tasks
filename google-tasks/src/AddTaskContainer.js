@@ -23,7 +23,7 @@ class AddTaskContainer extends Component {
 
   render() {
     return (
-      <div className="Add-task">
+      <div id="Add-task">
         <AddTaskForm
           task={this.state.task}
           handleOnChange={this.handleOnChange}

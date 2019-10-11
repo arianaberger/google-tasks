@@ -6,13 +6,13 @@ const MenuFooter = (props) => {
     return (
       <>
       <div className="Col-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="Menu-svg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="Menu-svg" onClick={props.onClickExpandMenu}>
           <path d="M0 0h24v24H0z" fill="none"/>
           <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
         </svg>
       </div>
       <div className="Col-2">
-        <img src={Plus} onClick={props.onClick} alt="google-plus-icon" />
+        <img src={Plus} onClick={props.onClickAddTask} alt="google-plus-icon" />
       </div>
       <div className="Col-3">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="More-svg">

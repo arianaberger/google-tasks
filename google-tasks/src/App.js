@@ -3,6 +3,7 @@ import './App.css';
 import TasksContainer from './TasksContainer';
 import MenuFooter from './MenuFooter'
 import AddTaskContainer from './AddTaskContainer';
+import Menu from './Menu';
 
 class App extends Component {
 
@@ -11,6 +12,7 @@ class App extends Component {
     this.state = {
       counter: 1,
       clicked: false,
+      menu: false,
       tasks: [
         // {task: "You!", complete: false, id: 1},
         // {task: "Can!", complete: false, id: 2},
@@ -54,6 +56,13 @@ class App extends Component {
     })
   }
 
+  onClickExpandMenu = () => {
+    console.log("menu")
+    this.setState({
+      menu: !this.state.menu
+    })
+  }
+
   render() {
     return (
       <div className="App">
@@ -61,10 +70,18 @@ class App extends Component {
           <div className="App-main">
             {this.state.clicked ?
               <>
-                <div className="Add-task-overlay" onClick={this.onClickAddTask}></div>
+                <div id="Add-task-overlay" onClick={this.onClickAddTask}></div>
                 <AddTaskContainer tasks={this.state.tasks} createTask={this.createTask} />
-              </> :
-              null
+              </>
+              : null
+            }
+
+            {this.state.menu ?
+              <>
+                <div id="Menu-overlay" onClick={this.onClickExpandMenu}></div>
+                <Menu />
+              </>
+              : null
             }
 
             <h2>My Tasks</h2>
@@ -72,7 +89,7 @@ class App extends Component {
               <TasksContainer onClick={this.onClickCompleteTasks} tasks={this.state.tasks} />
             </div>
             <div className="Menu-footer">
-              <MenuFooter onClick={this.onClickAddTask} />
+              <MenuFooter onClickAddTask={this.onClickAddTask} onClickExpandMenu={this.onClickExpandMenu}/>
             </div>
           </div>
         </header>

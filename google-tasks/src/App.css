@@ -6,10 +6,6 @@ body {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
 .App-header {
   background-color: #B9BBBA;
   min-height: 100vh;
@@ -28,7 +24,7 @@ body {
 .App-main {
   position: relative;
   width: 320px;
-  min-height: 570px;
+  height: 580px;
   background-color: #fff;
   text-align: left;
   /* padding: 10px; */
@@ -49,7 +45,7 @@ h2 {
 h4 {
   font-size: 0.65em;
   font-weight: 600;
-  padding-left: 15px;
+  padding-left: 20px;
   margin-top: 15px;
   color: #3F3F3F;
 }
@@ -82,7 +78,6 @@ button {
 .Menu-footer {
   display: flex;
   justify-content: center;
-  width: 310px;
   padding: 5px;
   -webkit-box-shadow: 0px -1px 5px -1px rgba(153,153,153,1);
   -moz-box-shadow: 0px -1px 5px -1px rgba(153,153,153,1);
@@ -111,7 +106,8 @@ button {
 /* Task-specific Formatting */
 
 .Tasks {
-  min-height: 430px;
+  height: 430px;
+  overflow: auto;
 }
 
 .Completed-tasks {
@@ -125,6 +121,7 @@ button {
 
 .Image-splash {
   margin-top: 50px;
+  margin-bottom: -10px;
   width: 70%;
 }
 
@@ -180,11 +177,12 @@ button {
 
 /* Add Task Function */
 
-.Add-task {
+#Add-task {
   width: 300px;
   height: 12%;
   padding: 10px;
   position: absolute;
+  border-radius: 5px 5px;
   bottom: 0;
   left: 0;
   background-color: white;
@@ -192,7 +190,7 @@ button {
   display: block;
 }
 
-.Add-task-overlay {
+#Add-task-overlay {
   width: 300px;
   height: 88%;
   padding: 10px;
@@ -200,7 +198,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.2;
+  opacity: 0.3;
   background-color: black;
   /* z-index: 5000; */
   display: block;
@@ -230,11 +228,6 @@ button {
 }
 
 .Add-task-cols2 {
-  padding-top: 15px;
-  width: 15%
-}
-
-.Add-task-cols3 {
   text-align: right;
   padding-top: 10px;
   padding-right: 5px;
@@ -247,6 +240,68 @@ button {
   color: #2679EB;
 }
 
+/*  Menu Overlay Formatting */
+
+#Menu-overlay {
+  width: 300px;
+  height: 50%;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  background-color: black;
+  /* z-index: 5000; */
+  display: block;
+}
+
+#Menu {
+  width: 300px;
+  height: 50%;
+  padding: 10px;
+  position: absolute;
+  border-radius: 7px 7px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  /* z-index: 5000; */
+}
+
+#Email {
+  display: flex;
+}
+
+.Menu-row {
+  color: #3F3F3F;
+  font-size: .6em;
+  font-weight: bold;
+  display: flex;
+  padding-left: 10px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+
+#Menu-row-select {
+  width: 92%;
+  position: absolute;
+  left: 0;
+  color: #005BC2;
+  border-radius: 0px 30px 30px 0px;
+  font-size: .6em;
+  font-weight: bold;
+  display: flex;
+  padding-left: 20px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  background-color: #CCE4FF;
+}
+
+.Menu-divider {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  border-bottom: .75px solid #E8E8E8;
+}
 
 /* SVG Formatting */
 
