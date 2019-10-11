@@ -24,7 +24,7 @@ You can watch an overview of this app that I recorded on [youtube](https://youtu
 # Clone this repository
 $ git clone git@github.com:arianaberger/google-tasks.git
 
-# Go into the repository using the following twice 
+# Go into the repository
 $ cd google-tasks
 
 # Install dependencies

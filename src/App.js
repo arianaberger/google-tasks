@@ -14,11 +14,10 @@ class App extends Component {
       clicked: false,
       menu: false,
       tasks: [
-        // {task: "You!", complete: false, id: 1},
-        // {task: "Can!", complete: false, id: 2},
-        // {task: "Do!", complete: true, id: 3},
-        // {task: "It!", complete: true, id: 4},
-        // {task: "This one should overflow and if it doesn't I will be really annoyed", complete: false, id: 5},
+        {task: "Go on a run", complete: false, id: 1},
+        {task: "Grocery shopping", complete: false, id: 2},
+        {task: "Fold laundry", complete: true, id: 3},
+        {task: "This one should overflow and is something I will have to fix in the future", complete: true, id: 4},
       ]
     }
   }
